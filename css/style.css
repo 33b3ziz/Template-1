@@ -342,6 +342,11 @@ body {
   color: #777;
   margin-bottom: 0;
 }
+@media (max-width: 767px) {
+  .projects {
+    row-gap: 30px;
+  }
+}
 /* End Portfolio */
 /* Start About */
 .about {
