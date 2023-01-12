@@ -419,23 +419,25 @@ body {
 .contact-info {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
+  text-align: center;
 }
 
 .contact .contact-info h3 {
   font-size: 40px;
   font-weight: 900;
   letter-spacing: -2px;
-  text-align: center;
   margin-bottom: 0;
-}
-
-.contact .contact-info h3:first-child {
   color: var(--secondary-color);
 }
 
-.contact .contact-info h3:nth-child(2) {
+.contact .contact-info .link {
   color: var(--main-color);
   margin-top: 10px;
+  text-decoration: none;
+  font-size: 40px;
+  display: block;
+  font-weight: 900;
+  letter-spacing: -2px;
 }
 
 .contact .social {
@@ -450,6 +452,13 @@ body {
   margin-left: 10px;
   font-weight: 400;
   font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .contact .contact-info h3,
+  .contact .contact-info .link {
+    font-size: 25px;
+  }
 }
 /* End Contact */
 /* Start Footer */
